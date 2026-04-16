@@ -1,5 +1,6 @@
 import { startTransition, useDeferredValue, useState } from "react";
 import MetallicPaint from "./components/MetallicPaint";
+import FloatingLines from "./components/FloatingLines";
 import logo from "./assets/metallic-mark.svg";
 
 const unitCatalog = [
@@ -58,7 +59,21 @@ function App() {
 
   return (
     <div className="app-shell">
-      <div className="atmosphere" aria-hidden="true" />
+      <div className="background-stack" aria-hidden="true">
+        <FloatingLines
+          enabledWaves={["top", "middle", "bottom"]}
+          lineCount={[10, 15, 20]}
+          lineDistance={[8, 6, 4]}
+          bendRadius={5.0}
+          bendStrength={-0.5}
+          interactive={false}
+          parallax={false}
+          linesGradient={["#74f4d4", "#60c3ff", "#ff9869", "#9f7bff"]}
+          mixBlendMode="screen"
+        />
+        <div className="atmosphere" />
+      </div>
+
       <header className="topbar">
         <p className="brand">Arnav SAT Math</p>
         <nav>
