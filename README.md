@@ -1,31 +1,39 @@
-# SAT Math Tutoring Website
+# SAT Math Tutoring Website (React)
 
-Sleek starter website and resource system for an SAT Math tutoring business.
+Sleek React frontend for an SAT Math tutoring business, featuring a metallic animated hero effect and a structured SAT unit resource hub.
 
-## What's included
+## Stack
 
-- Stylish landing page (`index.html`)
-- Resource hub with category filters (`resources.html`)
-- Unit pages for all four SAT Math domains (`/units`)
-- Editable curriculum templates (`/content/units`)
-- Student planning templates (`/docs`)
+- React + Vite
+- Custom CSS
+- React Bits inspired `MetallicPaint` component (JavaScript + CSS variant)
 
 ## Run locally
 
-Because this is a static site, you can open `index.html` directly in your browser, or serve it with any static server.
+```bash
+npm install
+npm run dev
+```
 
-## Deploy to GitHub Pages
+## Build
 
-1. Push this repository to GitHub.
-2. In GitHub: `Settings` -> `Pages`.
-3. Under `Build and deployment`, select:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/ (root)`
-4. Save and wait for GitHub Pages to publish.
+```bash
+npm run build
+npm run preview
+```
 
-## Next build steps
+## Project structure
 
-- Add real lesson links and worksheet PDFs to each unit page.
-- Add a calendar booking link (Calendly or similar) in contact buttons.
-- Add testimonials and parent/student outcomes to the landing page.
+- `src/App.jsx` -> landing page + unit resource experience
+- `src/components/MetallicPaint.jsx` -> metallic shader animation component
+- `public/unit-plans/` -> SAT unit blueprints
+- `public/templates/` -> reusable planner and error-log resources
+- `content/` + `docs/` -> editable authoring source templates
+
+## GitHub Pages
+
+`vite.config.js` is configured with:
+
+- `base: "/sat-math-tutoring/"`
+
+If you deploy to a different repo or custom domain, update the `base` value first.
