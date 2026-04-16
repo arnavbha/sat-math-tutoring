@@ -42,6 +42,11 @@ const filters = [
   { id: "strategy", label: "Strategy" }
 ];
 
+const floatingLineWaves = ["top", "middle", "bottom"];
+const floatingLineCounts = [10, 15, 20];
+const floatingLineDistances = [8, 6, 4];
+const floatingLineGradient = ["#74f4d4", "#60c3ff", "#ff9869", "#9f7bff"];
+
 function App() {
   const [activeFilter, setActiveFilter] = useState("all");
   const deferredFilter = useDeferredValue(activeFilter);
@@ -61,14 +66,14 @@ function App() {
     <div className="app-shell">
       <div className="background-stack" aria-hidden="true">
         <FloatingLines
-          enabledWaves={["top", "middle", "bottom"]}
-          lineCount={[10, 15, 20]}
-          lineDistance={[8, 6, 4]}
+          enabledWaves={floatingLineWaves}
+          lineCount={floatingLineCounts}
+          lineDistance={floatingLineDistances}
           bendRadius={5.0}
           bendStrength={-0.5}
           interactive={false}
           parallax={false}
-          linesGradient={["#74f4d4", "#60c3ff", "#ff9869", "#9f7bff"]}
+          linesGradient={floatingLineGradient}
           mixBlendMode="screen"
         />
         <div className="atmosphere" />
