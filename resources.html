@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAT Math Resource Hub | Arnav SAT Math</title>
+    <meta
+      name="description"
+      content="Organized SAT Math resources by unit: lessons, drills, timed sets, and strategy sheets."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="./index.html">Arnav SAT Math</a>
+      <nav class="main-nav">
+        <a href="./index.html">Home</a>
+        <a href="./resources.html" aria-current="page">Resources</a>
+        <a href="mailto:hello@arnavsatmath.com">Contact</a>
+      </nav>
+      <a class="button button-ghost" href="mailto:hello@arnavsatmath.com">Book A Session</a>
+    </header>
+
+    <main>
+      <section class="resource-intro" data-reveal>
+        <p class="eyebrow">SAT Math Unit Library</p>
+        <h1>One Place For Every SAT Math Skill.</h1>
+        <p>
+          Use this hub to access unit roadmaps, curated lessons, drills, and timed practice sets. Filter
+          by resource type to build focused study sessions.
+        </p>
+      </section>
+
+      <section class="section" data-reveal>
+        <h2>Filter Resources</h2>
+        <div class="chip-row" role="tablist" aria-label="Resource categories">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="lesson">Lessons</button>
+          <button class="chip" data-filter="drill">Drills</button>
+          <button class="chip" data-filter="timed">Timed Sets</button>
+          <button class="chip" data-filter="strategy">Strategy</button>
+        </div>
+
+        <div class="resource-grid">
+          <article class="resource-card" data-kind="lesson drill strategy">
+            <h3>Heart of Algebra</h3>
+            <p>Linear equations, systems, and modeling fundamentals with structured progression.</p>
+            <div class="tag-row">
+              <span class="tag">Lessons</span>
+              <span class="tag">Drills</span>
+              <span class="tag">Strategy</span>
+            </div>
+            <p class="tag-row">
+              <a class="button button-secondary" href="./units/heart-of-algebra.html">Open Unit</a>
+            </p>
+          </article>
+
+          <article class="resource-card" data-kind="lesson drill timed">
+            <h3>Problem Solving &amp; Data Analysis</h3>
+            <p>Ratios, percentages, tables, probability, and chart interpretation under timing pressure.</p>
+            <div class="tag-row">
+              <span class="tag">Lessons</span>
+              <span class="tag">Drills</span>
+              <span class="tag">Timed Sets</span>
+            </div>
+            <p class="tag-row">
+              <a class="button button-secondary" href="./units/problem-solving-and-data-analysis.html">
+                Open Unit
+              </a>
+            </p>
+          </article>
+
+          <article class="resource-card" data-kind="lesson drill timed strategy">
+            <h3>Passport to Advanced Math</h3>
+            <p>Quadratics, polynomials, exponents, and nonlinear relationships with advanced item types.</p>
+            <div class="tag-row">
+              <span class="tag">Lessons</span>
+              <span class="tag">Drills</span>
+              <span class="tag">Timed Sets</span>
+              <span class="tag">Strategy</span>
+            </div>
+            <p class="tag-row">
+              <a class="button button-secondary" href="./units/passport-to-advanced-math.html">
+                Open Unit
+              </a>
+            </p>
+          </article>
+
+          <article class="resource-card" data-kind="lesson drill strategy">
+            <h3>Geometry &amp; Trigonometry</h3>
+            <p>Angles, circles, area/volume, right triangles, and trig essentials for fast problem solving.</p>
+            <div class="tag-row">
+              <span class="tag">Lessons</span>
+              <span class="tag">Drills</span>
+              <span class="tag">Strategy</span>
+            </div>
+            <p class="tag-row">
+              <a class="button button-secondary" href="./units/geometry-and-trigonometry.html">
+                Open Unit
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-panel" data-reveal>
+        <h2>Start Your System</h2>
+        <p>
+          Download the starter templates to track mistakes and plan weekly study blocks. These are the
+          same systems used in tutoring sessions.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-secondary" href="./docs/study-planner-template.md">Study Planner Template</a>
+          <a class="button button-secondary" href="./docs/error-log-template.md">Error Log Template</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><span id="year"></span> Arnav SAT Math Resource Hub.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
